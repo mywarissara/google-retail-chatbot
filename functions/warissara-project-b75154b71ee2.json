@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "warissara-project",
+  "private_key_id": "b75154b71ee2dfdd831a516dc83cbae1aa6a45bf",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+Ci9mKfC20+ze\nGJZB654/b/f5RWuI4VxuKlopf0pW8eSLORegqGrrkgsML25WcN0D63GTFzcOxdTV\nuJQgcS7a/xsAYrDHnVixxjUJ6XQhCMPZ9x5saK912jzNp/VGA7dZLKaljjqC+dQR\nHGCblyTpZ2Q6jnHQOTNfCMSdA0g1hQGhITfAB+Mz24r8eoGNwbN2F+50J/VMGVtQ\nysSdMaGaJH2cG6M24cub2YL6oVJy5WPut9XgjAxkw46U5VnXrnzKCCwhdJfCkWYd\n3+WwUXlxd3bM3Xc6dmeCy6419avYmWfR48DARqe6qmuIXv7C7BnXV0cudNpTEA5O\nvIyfXHpPAgMBAAECggEAWc4CXCsRn7RCSSohR4GKxLuq2Vce3A5zWXQWK2oFvVSO\nBeSy767m5++Z3OZFJAAt0X5fq3za/dYrH9wb08DovYC0R9hbZdlLYqchxU9XG41C\n0CvhaqWF1RGOjjkCxVVYPYHGNpIhwGdC+dsJJD2mqc28JZfO3PFK/2vrTa+RXght\nyjIgEHIlmVH9u3G0rwIRWW0vaJ+0gZvc3Ck7qc1LHv5Ttt//3z6KN9CSIbwRaUxc\nZfnJYGItktlD3g9b4xGj88VtaxURwleyA836+947JkKi5h69uCeHM8ja45o4nc52\nzqfAIbbAzYZjQQyKC8cSypqUhQAu1F9XwnCEfaBukQKBgQDqAokMOCJ685fCMpf1\nnfEsHn2ZsBUb7KImzyAUDZsKIA2kHoMny3mX6Zge+Yxd+ntu1H4VUcdnhkJollPr\nrg76Uv3mr9XfELzWv3Z2jsg+cJz8FNmN/9v1fe1irTY5t8BWUESlgDGOD4nMINjN\ng8266IffoJlSj9Z/PN0HyFzpkwKBgQDP5eGz6oqlPhHEFOVW6Y8oXoq8ArifuyZX\ntAXZa3Un9yBVSi7eYxrA3HjSxFdWqPAE2tLHZoyVfFzjNc7uJpoDNJ6BSTHmaS0W\nLQfJ8XeVEPlaD8VSXaharmve4ZlN7DecTQL8r9URKyzqh/IFuzuLmvbj9jxPkLe/\nXKmEbOMx1QKBgQDUFSAoFugJDqRHuJrIXDCrj6a9lzxKZpg/HBEym3IcJxi12YF8\nm4jECU15JSn2MoGT3Lm4kLlsNd4R88xzGPkyHe1HGa130S+UYUn4AUeyb1WXkT3q\n2Cx9vXdbqygt/z8t+ul8JUbEPYjhnBNhj0bxUrVyE5dhoEMCZiLcXtb2SQKBgEck\nuL8T5Qw1GGlMaUr7tBSxfbJnD/0BU1ax8Up83mOlyvfE4hMSQQZ8rBAcRnMObsyK\ngZTg//zryPGr6TtQFGZCbHd7r8rUdSxgjojJzA1D+MCcIv9Ts5gMljd4ZjjnPASN\nyhbkqPouFznO+cCCWRcmGZTbH7puoKKouA3sITddAoGBAMDgqK3vn3olAZK6dpDQ\nWjYW8yoa67ciOvXFZ8G+/m5xBh8wyBtc6+gy8Z0FndHkxIQkUra4K7RwL5+MMyS6\nY83HVXB0PBz7/kpGpwxsSIHQENZUVoENFe3r8bPCKWL/aaDNK0RL3Pwc9y+8bWHJ\nJFTPnRQjxfeOspW3DhCgDqFv\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-integration@warissara-project.iam.gserviceaccount.com",
+  "client_id": "107434537850119106601",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-integration%40warissara-project.iam.gserviceaccount.com"
+}

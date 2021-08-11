@@ -1,13 +1,13 @@
 const functions = require('firebase-functions');
 const request = require('request-promise');
-const ACCESS_TOKEN = 'YreEnqMxGwKkUtmX9YpPo/2m8lGNGhUgc+kZYqLQRNIVxDY0LFuLKWH8aMMmnsuqvlm8IL/DDEmXAMB6B6rQT5mWILTJf5kG0RAQxjEV8A3GdYYM6qau1omOE4d+pOJu3Yk+Cb5P5Dbh93CYESkjugdB04t89/1O/w1cDnyilFU='
+const ACCESS_TOKEN = $LINE_ACCESS_TOKEN
 const LINE_MESSAGING_API = 'https://api.line.me/v2/bot';
 const LINE_GET_CONTENT_API = 'https://api-data.line.me/v2/bot/message';
 const vision = require('@google-cloud/vision');
 const { ImageAnnotatorClient } = require('@google-cloud/vision').v1;
 const BigQuery = require('@google-cloud/bigquery');
 const fetch = require('node-fetch');
-const MAP_API_KEY = 'AIzaSyDTciOAG1tmhxKAW_Wc4KMEecf2VKXWY4A'
+const MAP_API_KEY = $MAP_API
 const line = require('@line/bot-sdk');
 const axios = require('axios')
 const fs = require('fs');
@@ -15,7 +15,7 @@ const LINE_HEADER = {
     'Content-Type': 'application/json',
     'Authorization': `Bearer ${ACCESS_TOKEN}`
 };
-const fileName = "/Users/warissara/Desktop/firebase-function/functions/image.jpg";
+const fileName = "~/Desktop/firebase-function/functions/image.jpg";
 // const fileName = "/Users/warissara/Desktop/S__10739754.jpg";
 const { Client } = require("@googlemaps/google-maps-services-js");
 

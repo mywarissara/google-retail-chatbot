@@ -17,7 +17,7 @@
 Use pre agent data
 1. Download the agent data from [Dialogflow CX Agent in Cloud Storage](https://storage.cloud.google.com/carpark-chatbot-bucket/Dialogflow-agent/Dialogflow-agent)
 
-Create new agent
+OR create new agent
 1. Start creating agent on [Dialogflow CX Console](https://dialogflow.cloud.google.com/cx/projects)
 2. Select **th** as a default language
 3. Select location as **asia-northeast1 (Tokyo, Japan)**

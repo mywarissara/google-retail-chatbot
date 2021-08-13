@@ -14,7 +14,10 @@
 ## Tutorial
 
 ### 1. Dialogflow CX
+Use pre agent data
+1. Download the agent data from [Dialogflow CX Agent in Cloud Storage](https://storage.cloud.google.com/carpark-chatbot-bucket/Dialogflow-agent/Dialogflow-agent)
 
+Create new agent
 1. Start creating agent on [Dialogflow CX Console](https://dialogflow.cloud.google.com/cx/projects)
 2. Select **th** as a default language
 3. Select location as **asia-northeast1 (Tokyo, Japan)**
@@ -66,6 +69,8 @@ Will fill out later after we created the cloud function
 - Create Table inside 
 Table name : ***user_dataset***
 Schema: 
+
+
 | field name | type |
 | ------ | ------ |
 | user_id | String |
@@ -77,6 +82,8 @@ Schema:
 
 Table name : ***user_reserve***<br>
 Schema: 
+
+
 | field name | type |
 | ------ | ------ |
 | user_id | String |
@@ -86,6 +93,8 @@ Schema:
 
 Table name : ***parking_slot***<br>
 Schema: 
+
+
 | field name | type |
 | ------ | ------ |
 | slot_id | String |

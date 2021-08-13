@@ -1,0 +1,1049 @@
+{
+  "agent": {
+    "name": "projects/warissara-project/locations/us-central1/agents/924e9aee-6166-4b0b-952d-4ac975552109",
+    "displayName": "Contact Support",
+    "defaultLanguageCode": "th",
+    "timeZone": "Asia/Bangkok",
+    "enableLogging": true,
+    "projectNumber": 497414494213,
+    "startFlow": "projects/warissara-project/locations/us-central1/agents/924e9aee-6166-4b0b-952d-4ac975552109/flows/00000000-0000-0000-0000-000000000000",
+    "ivrSettings": {
+    
+    },
+    "advancedSettings": {
+      "loggingSettings": {
+        "enableInteractionLogging": true
+      }
+    }
+  },
+  "flows": [ {
+    "flow": {
+      "flowId": "00000000-0000-0000-0000-000000000000",
+      "displayName": "Default Start Flow",
+      "description": "A start flow created along with the agent",
+      "transitionEvents": [ {
+        "triggerIntentId": "00000000-0000-0000-0000-000000000000",
+        "transitionEventHandler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "th"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "สวัสดีค่ะ"
+                    }, {
+                      "text": "สบายดีไหมคะ"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "bd44fc17-9a91-4875-96ee-1187f0a6b805"
+      }, {
+        "triggerIntentId": "cafe6bcc-8fb6-4ab4-8387-eba1625a8040",
+        "transitionEventHandler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "th"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "ได้เลย! เดี๋ยวน้องบอทขอเช็คที่ว่างให้นะคะ"
+                    } ]
+                  }
+                } ]
+              } ]
+            },
+            "setParameterActions": [ {
+              "parameter": "tel",
+              "value": null
+            }, {
+              "parameter": "otp",
+              "value": null
+            }, {
+              "parameter": "state",
+              "value": null
+            } ]
+          },
+          "targetPageId": "c858ac44-2a0c-4830-984f-5ed64121cffb"
+        },
+        "name": "6f766b55-ac6d-4e98-8ae7-aeb690913e58"
+      }, {
+        "triggerIntentId": "d0b8a32d-33ab-48a1-9425-fe5b968eb8ac",
+        "transitionEventHandler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "th"
+                },
+                "responses": [ {
+                  "payload": {
+                    "altText": "this is a flex message",
+                    "contents": {
+                      "body": {
+                        "contents": [ {
+                          "align": "start",
+                          "color": "#000000FF",
+                          "contents": [ ],
+                          "gravity": "top",
+                          "margin": "xl",
+                          "size": "xl",
+                          "text": "Parking Service",
+                          "type": "text",
+                          "weight": "bold"
+                        }, {
+                          "align": "start",
+                          "contents": [ ],
+                          "margin": "xl",
+                          "size": "md",
+                          "text": "อัตราค่าบริการจอดรถยนต์  ",
+                          "type": "text"
+                        }, {
+                          "align": "start",
+                          "contents": [ ],
+                          "margin": "xs",
+                          "size": "md",
+                          "text": "Car Parking Fee",
+                          "type": "text"
+                        }, {
+                          "type": "separator"
+                        }, {
+                          "contents": [ ],
+                          "margin": "xl",
+                          "size": "sm",
+                          "text": "จอดฟรี 2 ชั่วโมงแรก",
+                          "type": "text",
+                          "weight": "regular"
+                        }, {
+                          "contents": [ ],
+                          "size": "sm",
+                          "text": "ใช้จ่ายครบ  600 บาทขึ้นไป ฟรีอีก 2 ชั่วโมง",
+                          "type": "text"
+                        }, {
+                          "contents": [ ],
+                          "size": "sm",
+                          "text": "ใช้จ่ายครบ 3,000 ฟรี 6 ชั่วโมงแรก",
+                          "type": "text"
+                        }, {
+                          "contents": [ ],
+                          "size": "sm",
+                          "text": "ใช้จ่ายครบ 6,000 ฟรี 8 ชั่วโมงแรก",
+                          "type": "text"
+                        }, {
+                          "type": "separator"
+                        }, {
+                          "contents": [ ],
+                          "margin": "xl",
+                          "size": "sm",
+                          "text": "อัตราค่าจอดรถยนต์ชั่วโมงที่ 3-5 ",
+                          "type": "text"
+                        }, {
+                          "contents": [ ],
+                          "size": "sm",
+                          "text": "ชั่วโมงละ 30.",
+                          "type": "text"
+                        }, {
+                          "contents": [ ],
+                          "size": "sm",
+                          "text": "ตั้งแต่ชั่วโมงที่ 6 คิดช่ัวโมงละ 60.",
+                          "type": "text"
+                        } ],
+                        "layout": "vertical",
+                        "type": "box"
+                      },
+                      "direction": "ltr",
+                      "footer": {
+                        "contents": [ {
+                          "action": {
+                            "label": "เมนูหลัก",
+                            "text": "เมนูหลัก",
+                            "type": "message"
+                          },
+                          "height": "md",
+                          "margin": "xl",
+                          "style": "link",
+                          "type": "button"
+                        }, {
+                          "action": {
+                            "data": "Booking",
+                            "initial": "15:03",
+                            "label": "จองที่จอดรถ",
+                            "max": "20:03",
+                            "min": "10:03",
+                            "mode": "time",
+                            "type": "datetimepicker"
+                          },
+                          "margin": "xl",
+                          "style": "primary",
+                          "type": "button"
+                        } ],
+                        "layout": "horizontal",
+                        "type": "box"
+                      },
+                      "type": "bubble"
+                    },
+                    "type": "flex"
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "505b407a-122c-440c-9410-1a691983221d"
+      }, {
+        "triggerIntentId": "cf4d3edd-50ca-4fd2-a3bf-6f257ca9d14c",
+        "transitionEventHandler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "th"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "ห้าง Central เปิดบริการทุกวันนะคะ เวลา 11.00 - 20.00\nโทร. 02 802 9000"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "ae19a06b-f1aa-4c20-8a62-9673819336a7"
+      }, {
+        "triggerIntentId": "9886d4cf-f4d2-4a95-b61a-1db947760014",
+        "transitionEventHandler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "th"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "ห้างเซ็นทรัลเป็นของตระกูลจิราธิวัฒน์นะคะ "
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "668179c0-3c12-4e25-9e30-9dbf5c2f62fb"
+      }, {
+        "triggerIntentId": "a3b09f50-ea06-4340-9baf-ba76fa7a4213",
+        "transitionEventHandler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "th"
+                },
+                "responses": [ {
+                  "payload": {
+                    "altText": "this is an image carousel template",
+                    "template": {
+                      "columns": [ {
+                        "action": {
+                          "label": "SHOP NOW",
+                          "type": "uri",
+                          "uri": "https://www.central.co.th/th?gclid=CjwKCAjwmK6IBhBqEiwAocMc8gt3E_TrPnOG0YonYQTujnaBqJ--71q0M5xByTfzJxjpmDUrarrBVRoCuk0QAvD_BwE\u0026gclsrc=aw.ds"
+                        },
+                        "imageUrl": "https://i.ibb.co/CV526jN/817473c0-b871-11eb-9ca2-73594b023eb0-original.jpg"
+                      }, {
+                        "action": {
+                          "label": "SHOP NOW",
+                          "type": "uri",
+                          "uri": "https://www.central.co.th/th?gclid=CjwKCAjwmK6IBhBqEiwAocMc8gt3E_TrPnOG0YonYQTujnaBqJ--71q0M5xByTfzJxjpmDUrarrBVRoCuk0QAvD_BwE\u0026gclsrc=aw.ds"
+                        },
+                        "imageUrl": "https://i.ibb.co/m96KKvh/Food-Delivery-Take-away-with-Voucher.jpg"
+                      } ],
+                      "type": "image_carousel"
+                    },
+                    "type": "template"
+                  }
+                } ]
+              } ]
+            }
+          },
+          "targetPageId": "END_FLOW"
+        },
+        "name": "dcb3d316-b85a-4d09-9fc4-ac89beb65a65"
+      }, {
+        "triggerIntentId": "30921ff6-49ed-425f-b31d-0c1505c877c0",
+        "transitionEventHandler": {
+          "beforeTransition": {
+          
+          },
+          "targetPageId": "d4c6af21-23aa-49fe-b2e1-aeade5c99b1a"
+        },
+        "name": "60f89a89-77b3-4a3d-8e9a-2e1164803a13"
+      } ],
+      "modelIdentifier": {
+        "modelId": "f64e32fc-b431-4dce-8d18-92185ecad01a"
+      },
+      "conversationEvents": [ {
+        "event": "sys.no-match-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "th"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "ฉันไม่เข้าใจค่ะ พูดใหม่ได้ไหมคะ"
+                    }, {
+                      "text": "อะไรนะคะ พูดใหม่ได้ไหมคะ"
+                    }, {
+                      "text": "ขอโทษค่ะ ลองพูดอีกครั้งได้ไหมคะ"
+                    }, {
+                      "text": "ขอโทษค่ะ พูดอีกครั้งได้ไหมคะ"
+                    }, {
+                      "text": "พูดอีกทีได้ไหมคะ"
+                    }, {
+                      "text": "ขอโทษค่ะ ฉันไม่เข้าใจค่ะ"
+                    }, {
+                      "text": "ขอโทษค่ะ อะไรนะคะ"
+                    }, {
+                      "text": "อีกทีได้ไหมคะ"
+                    }, {
+                      "text": "ว่ายังไงนะคะ"
+                    }, {
+                      "text": "ช่วยพูดอีกทีได้ไหมคะ"
+                    }, {
+                      "text": "ฉันไม่เข้าใจค่ะ"
+                    }, {
+                      "text": "ฉันฟังไม่ทันค่ะ"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "e676330e-5e7d-43e5-a0db-4b21ad9d5859"
+      }, {
+        "event": "sys.no-input-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "th"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "ฉันไม่เข้าใจค่ะ พูดใหม่ได้ไหมคะ"
+                    }, {
+                      "text": "อะไรนะคะ พูดใหม่ได้ไหมคะ"
+                    }, {
+                      "text": "ขอโทษค่ะ ลองพูดอีกครั้งได้ไหมคะ"
+                    }, {
+                      "text": "ขอโทษค่ะ พูดอีกครั้งได้ไหมคะ"
+                    }, {
+                      "text": "พูดอีกทีได้ไหมคะ"
+                    }, {
+                      "text": "ขอโทษค่ะ ฉันไม่เข้าใจค่ะ"
+                    }, {
+                      "text": "ขอโทษค่ะ อะไรนะคะ"
+                    }, {
+                      "text": "อีกทีได้ไหมคะ"
+                    }, {
+                      "text": "ว่ายังไงนะคะ"
+                    }, {
+                      "text": "ช่วยพูดอีกทีได้ไหมคะ"
+                    }, {
+                      "text": "ฉันไม่เข้าใจค่ะ"
+                    }, {
+                      "text": "ฉันฟังไม่ทันค่ะ"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "0f598e88-1af8-4de2-aa2d-376da225579a"
+      } ],
+      "nluSettings": {
+        "classificationThreshold": 0.30000001,
+        "modelType": "MODEL_TYPE_STANDARD",
+        "customConfigKey": "8f98aefd-abe5-4111-a81f-0850951e3272"
+      },
+      "etag": "61137c6b"
+    },
+    "pages": [ {
+      "key": "11c5717b-610c-45bc-a1cf-987f7970134f",
+      "value": {
+        "displayName": "parking confirm",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "th"
+              },
+              "responses": [ {
+                "payload": {
+                  "altText": "this is a confirm template",
+                  "template": {
+                    "actions": [ {
+                      "label": "ยืนยัน",
+                      "text": "ยืนยันการจอง",
+                      "type": "message"
+                    }, {
+                      "label": "แก้ไข",
+                      "text": "แก้ไข",
+                      "type": "message"
+                    } ],
+                    "text": "ต้องการยืนยันการจองหรือไม่",
+                    "type": "confirm"
+                  },
+                  "type": "template"
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "4e40f74e-502a-4d32-b086-2614e3fee07b",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "function": {
+                "name": "bot",
+                "webhookFulfillmentId": "d6c7d272-f184-42c5-8df0-faadeb44b920"
+              }
+            },
+            "targetPageId": "END_FLOW"
+          },
+          "name": "142cd8a9-bcf0-443a-8b4b-a07f53a65ded"
+        } ],
+        "etag": "611379ab"
+      }
+    }, {
+      "key": "c858ac44-2a0c-4830-984f-5ed64121cffb",
+      "value": {
+        "displayName": "parking info",
+        "onLoad": {
+          "setParameterActions": [ {
+            "parameter": "otp",
+            "value": null
+          }, {
+            "parameter": "tel",
+            "value": null
+          } ]
+        },
+        "slots": [ {
+          "displayName": "tel",
+          "mode": "REQUIRED",
+          "type": {
+            "className": "@sys.any",
+            "classType": "BUILT_IN_CLASS"
+          },
+          "fillBehavior": {
+            "initialPrompt": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "th"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "โปรดกรอกเบอร์โทรศัพท์"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            }
+          }
+        }, {
+          "displayName": "otp",
+          "mode": "REQUIRED",
+          "type": {
+            "className": "@sys.any",
+            "classType": "BUILT_IN_CLASS"
+          },
+          "fillBehavior": {
+            "initialPrompt": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "th"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "เราได้ส่ง OTP ไปยังหมายเลข $session.params.tel : A1234-1 รบกวนกรอกรหัส 4 หลัก"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            }
+          }
+        } ],
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "EQUALS",
+              "lhs": {
+                "member": {
+                  "expressions": [ {
+                    "value": "$page"
+                  }, {
+                    "value": "params"
+                  }, {
+                    "value": "status"
+                  } ]
+                }
+              },
+              "rhs": {
+                "value": "FINAL"
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "th"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "คุณต้องการจองที่จอดรถที่ Central Pinklao\n\nInformation\nTel : 0892010168\n"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "11c5717b-610c-45bc-a1cf-987f7970134f"
+          },
+          "name": "6f94a565-f0c9-44e8-9aaa-a8fa13ac9bd5"
+        } ],
+        "etag": "61137bd2"
+      }
+    }, {
+      "key": "d4c6af21-23aa-49fe-b2e1-aeade5c99b1a",
+      "value": {
+        "displayName": "card vip",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "th"
+              },
+              "responses": [ {
+                "payload": {
+                  "altText": "this is a flex message",
+                  "contents": {
+                    "body": {
+                      "contents": [ {
+                        "align": "start",
+                        "color": "#000000FF",
+                        "contents": [ ],
+                        "gravity": "top",
+                        "margin": "xl",
+                        "size": "xl",
+                        "text": "Parking Service",
+                        "type": "text",
+                        "weight": "bold"
+                      }, {
+                        "align": "start",
+                        "contents": [ ],
+                        "margin": "xl",
+                        "size": "md",
+                        "text": "อัตราค่าบริการจอดรถยนต์  ",
+                        "type": "text"
+                      }, {
+                        "align": "start",
+                        "contents": [ ],
+                        "margin": "xs",
+                        "size": "md",
+                        "text": "Car Parking Fee",
+                        "type": "text"
+                      }, {
+                        "type": "separator"
+                      }, {
+                        "contents": [ ],
+                        "margin": "xl",
+                        "size": "sm",
+                        "text": "จอดฟรี 2 ชั่วโมงแรก",
+                        "type": "text",
+                        "weight": "regular"
+                      }, {
+                        "contents": [ ],
+                        "size": "sm",
+                        "text": "ใช้จ่ายครบ  600 บาทขึ้นไป ฟรีอีก 2 ชั่วโมง",
+                        "type": "text"
+                      }, {
+                        "contents": [ ],
+                        "size": "sm",
+                        "text": "ใช้จ่ายครบ 3,000 ฟรี 6 ชั่วโมงแรก",
+                        "type": "text"
+                      }, {
+                        "contents": [ ],
+                        "size": "sm",
+                        "text": "ใช้จ่ายครบ 6,000 ฟรี 8 ชั่วโมงแรก",
+                        "type": "text"
+                      }, {
+                        "type": "separator"
+                      }, {
+                        "contents": [ ],
+                        "margin": "xl",
+                        "size": "sm",
+                        "text": "อัตราค่าจอดรถยนต์ชั่วโมงที่ 3-5 ",
+                        "type": "text"
+                      }, {
+                        "contents": [ ],
+                        "size": "sm",
+                        "text": "ชั่วโมงละ 30.",
+                        "type": "text"
+                      }, {
+                        "contents": [ ],
+                        "size": "sm",
+                        "text": "ตั้งแต่ชั่วโมงที่ 6 คิดช่ัวโมงละ 60.",
+                        "type": "text"
+                      } ],
+                      "layout": "vertical",
+                      "type": "box"
+                    },
+                    "direction": "ltr",
+                    "footer": {
+                      "contents": [ {
+                        "action": {
+                          "label": "เมนูหลัก",
+                          "text": "เมนูหลัก",
+                          "type": "message"
+                        },
+                        "height": "md",
+                        "margin": "xl",
+                        "style": "link",
+                        "type": "button"
+                      }, {
+                        "action": {
+                          "label": "จองที่จอดรถ",
+                          "text": "เลือกเวลาที่จะเข้าใช้บริการ",
+                          "type": "message"
+                        },
+                        "margin": "xl",
+                        "style": "primary",
+                        "type": "button"
+                      } ],
+                      "layout": "horizontal",
+                      "type": "box"
+                    },
+                    "type": "bubble"
+                  },
+                  "type": "flex"
+                }
+              } ]
+            } ]
+          }
+        },
+        "etag": "610d06b5"
+      }
+    } ]
+  } ],
+  "intents": [ {
+    "meta": {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "displayName": "Default Welcome Intent",
+      "priority": 500000
+    },
+    "trainingPhrases": [ {
+      "id": "2e7f5321-d7cd-42d5-abb7-4ad2934af5a3",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "สวัสดี"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "id": "7260dabf-5682-4edf-9af6-7133aa62f25d",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "หวัดดีจ้ะ"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "id": "19324e1c-b4b1-4cd4-b8a6-522bbfb49195",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "สวัสดีน้า"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "id": "cc2addf8-c0de-4adb-9b7c-e83fbd9037b5",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "ว่าไง"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "id": "db15f476-4842-43b5-9eb6-a7bbcde2d085",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "สวีดัส"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "id": "17ff9ba9-c6c1-4624-bab7-08837074df6d",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "สวัสดีจ้ะ"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "id": "609c0fce-bf66-4d4a-ab07-261ba3027189",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "หวัดดีจ้า"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "id": "777d45e4-83b1-46e0-9654-86b313787002",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "ไม่เจอกันตั้งนาน"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "id": "c12d0f28-5dd0-4c18-9439-43236ff25703",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "ขอทักทาย"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "id": "728ca512-76f3-4ad9-a5ae-35507a91aafe",
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "หวัดดี"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    } ]
+  }, {
+    "meta": {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "displayName": "Default Negative Intent",
+      "priority": 500000,
+      "isFallback": true
+    }
+  }, {
+    "meta": {
+      "id": "30921ff6-49ed-425f-b31d-0c1505c877c0",
+      "displayName": "card",
+      "priority": 500000,
+      "parameters": [ {
+        "id": "location",
+        "displayName": "location",
+        "value": "$location",
+        "entityTypeDisplayName": "@sys.location"
+      }, {
+        "id": "number",
+        "displayName": "number",
+        "value": "$number",
+        "entityTypeDisplayName": "@sys.number"
+      } ],
+      "etag": "610d03a7"
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "The "
+      }, {
+        "text": "1",
+        "entityType": "@sys.number",
+        "alias": "number"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "The 1 Exclusive",
+        "entityType": "@sys.location",
+        "alias": "location"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    } ]
+  }, {
+    "meta": {
+      "id": "4e40f74e-502a-4d32-b086-2614e3fee07b",
+      "displayName": "confirm",
+      "priority": 500000,
+      "etag": "610c2a29"
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "อะเค"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "โอเค"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "ยืนยัน"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    } ]
+  }, {
+    "meta": {
+      "id": "94c61151-a465-405c-9e1a-bd12018aba02",
+      "displayName": "fix",
+      "priority": 500000,
+      "etag": "610c29ce"
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "แก้ไข",
+        "userDefined": true
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    } ]
+  }, {
+    "meta": {
+      "id": "9886d4cf-f4d2-4a95-b61a-1db947760014",
+      "displayName": "owner",
+      "priority": 500000,
+      "etag": "610c3d16"
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "อยากเป็นเจ้าของห้าง",
+        "userDefined": true
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "ใครเป็นเจ้าของห้างนี้"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    } ]
+  }, {
+    "meta": {
+      "id": "a3b09f50-ea06-4340-9baf-ba76fa7a4213",
+      "displayName": "coffee",
+      "priority": 500000,
+      "etag": "6110da6d"
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "โปรโมชั่น",
+        "userDefined": true
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "มีโปรโมชั่นอะไรบ้า"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "ร้านอาหารที่ห้างนี้",
+        "userDefined": true
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "มีร้านอาหารอะไรบ้าง"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    } ]
+  }, {
+    "meta": {
+      "id": "cafe6bcc-8fb6-4ab4-8387-eba1625a8040",
+      "displayName": "Parking reservation",
+      "priority": 500000,
+      "parameters": [ {
+        "id": "last-name",
+        "displayName": "last-name",
+        "value": "$last-name",
+        "entityTypeDisplayName": "@sys.last-name"
+      } ],
+      "etag": "610c1a31"
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "จองที่จอดรถ"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "จอง",
+        "entityType": "@sys.last-name",
+        "alias": "last-name"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    } ]
+  }, {
+    "meta": {
+      "id": "cf4d3edd-50ca-4fd2-a3bf-6f257ca9d14c",
+      "displayName": "opening",
+      "priority": 500000,
+      "etag": "610c3cfa"
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "ปิดเมื่อไหร่"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "ปิดกี่โมง"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "ใช้บริการได้กี่โมง"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "เปิดเมื่อไหร่"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "ห้างเปิดกี่โมง"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    } ]
+  }, {
+    "meta": {
+      "id": "d0b8a32d-33ab-48a1-9425-fe5b968eb8ac",
+      "displayName": "free parking",
+      "priority": 500000,
+      "etag": "610c1b04"
+    },
+    "trainingPhrases": [ {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "รับสิทธิ์จอดรถฟรี",
+        "userDefined": true
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "จอดรถฟรี"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "จอดฟรี"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "ปั๊มบัตรจอดรถ"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    }, {
+      "type": "EXAMPLE",
+      "parts": [ {
+        "text": "รับสิทธิจอดฟรี"
+      } ],
+      "timesAddedCount": 1,
+      "lang": "th"
+    } ]
+  } ],
+  "fulfillments": [ {
+    "key": "d6c7d272-f184-42c5-8df0-faadeb44b920",
+    "value": {
+      "id": "d6c7d272-f184-42c5-8df0-faadeb44b920",
+      "name": "smartbot",
+      "webhook": {
+        "url": "https://asia-southeast1-warissara-project.cloudfunctions.net/fulfillment",
+        "webhookTimeout": 30
+      },
+      "etag": "61137961"
+    }
+  } ],
+  "isAgentSnapshot": true
+}
